@@ -1,98 +1,113 @@
-body {
-font-family: Arial, sans-serif;
+* {
 margin: 0;
 padding: 0;
-background-color: #f3f3f3;
+box-sizing: border-box;
+}
+
+body {
+
+font-family: 'Georgia', serif;
+background-color: #fffaf3;
 color: #333;
 }
 
 header {
-background-color: #2E8B57;
+background-color: #c97c5d;
 color: white;
 text-align: center;
-padding: 40px 20px;
-
+padding: 30px 20px;
 }
 
-nav {
-background-color: #e0e0e0;
-padding: 10px;
+header h1 {
+font-size: 2.5em;
 }
 
 nav ul {
+margin-top: 15px;
 list-style: none;
-display: flex;
-justify-content: center;
-gap: 20px;
-padding: 0;
 }
 
-nav a {
+nav ul li {
+display: inline;
+margin: 0 15px;
+}
+
+nav ul li a {
+color: white;
 text-decoration: none;
-color: #2E8B57;
+
 font-weight: bold;
 }
 
-section {
-padding: 20px;
+.container {
 max-width: 1000px;
-margin: 20px auto;
-background-color: white;
-border-radius: 8px;
+margin: auto;
+padding: 40px 20px;
 }
 
-.produtos {
-display: flex;
+.secao {
+margin-bottom: 50px;
+}
 
+.secao h2 {
+color: #a24c34;
+margin-bottom: 20px;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 gap: 20px;
-flex-wrap: wrap;
-justify-content: center;
 }
 
-.produto {
-background-color: #fafafa;
-border: 1px solid #ddd;
-border-radius: 5px;
+.card {
+background-color: #fff;
 padding: 15px;
-width: 250px;
-text-align: center;
+border-left: 5px solid #c97c5d;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+transition: transform 0.3s;
 }
 
-.produto img {
-width: 100%;
-height: auto;
-border-radius: 4px;
+.card:hover {
+transform: scale(1.03);
 }
 
-.produto button {
-background-color: #2E8B57;
+form {
+display: flex;
+flex-direction: column;
+}
+
+form label {
+margin-top: 10px;
+}
+
+form input,
+form textarea {
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #bbb;
+}
+
+form button {
+margin-top: 15px;
+padding: 10px;
+background-color: #c97c5d;
 color: white;
 border: none;
-padding: 10px;
-margin-top: 10px;
-cursor: pointer;
+
 border-radius: 5px;
+cursor: pointer;
 }
 
-.produto button:hover {
-
-background-color: #246b45;
-}
-
-table {
-width: 100%;
-border-collapse: collapse;
-margin-top: 10px;
-}
-
-th, td {
-border: 1px solid #ccc;
-padding: 10px;
-text-align: left;
+form button:hover {
+background-color: #a24c34;
 }
 
 footer {
+background-color: #6d3d2e;
+color: white;
 text-align: center;
 padding: 20px;
-background-color: #eee;
+margin-top: 40px;
 }

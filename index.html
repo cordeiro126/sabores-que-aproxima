@@ -1,107 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Feira Campo-Cidade</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabores que Aproximam</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-<h1>Feira Campo-Cidade 2025</h1>
-<p>A Unidade de Planejamento e Gestão de Projetos é a responsável pela prestação dos serviços. </p>
-</header>
-
+<h1>� Sabores que Aproximam �</h1>
+<p>Receitas que contam histórias e aproximam gerações</p>
 <nav>
 <ul>
-<li><a href="#inicio">Início</a></li>
-<li><a href="#curiosidades">Curiosidades</a></li>
-<li><a href="#ecommerce">Feirinha Virtual</a></li>
-<li><a href="#programacao">Programação</a></li>
-<li><a href="#contato">Contato</a></li>
+<li><a href="#receitas">Receitas</a></li>
+<li><a href="#historias">Histórias Afetivas</a></li>
+<li><a href="#enviar">Compartilhe a Sua</a></li>
 </ul>
 </nav>
+</header>
 
-<section id="inicio">
+<main class="container">
 
-<h2>Bem-vindo à Feira!</h2>
-<p>.As Feiras Livres de Curitiba comercializam especialmente hortifrutigranjeiros e são instaladas em ruas, praças e parques da cidade, em dias e horários pré-definidos.
+<section id="receitas" class="secao">
 
-Além daqueles produtos, também oferecem frios, carnes, pescados, massas, biscoitos, cereais, alimentos prontos para o consumo, produtos orgânicos, e demais itens de primeira necessidade e uso doméstico.Certamente não falta o tradicional ‘pastel de feira’.</p>
-<img src="feira-local.jpg" alt="Imagem da feira rural" width="100%">
-</section>
-
-<section id="curiosidades">
-<h2>Curiosidades</h2>
-<ul>
-<li>O Brasil é o 3o maior produtor de alimentos do mundo.</li>
-<li>Feiras rurais existem no país desde o período colonial.</li>
-<li>A agricultura familiar é responsável por 70% dos alimentos consumidos no Brasil.</li>
-<li>Algumas hortaliças crescem melhor sob luz solar indireta!</li>
-</ul>
-</section>
-
-<section id="ecommerce">
-<h2>Feirinha Virtual</h2>
-<p>Conheça nossos produtos fictícios artesanais e rurais. Os itens são fictícios e sem valor real.</p>
-<div class="produtos">
-<div class="produto">
-<img src="geleia.jpg" alt="Geleia artesanal">
-<h3>Geleia de Jabuticaba</h3>
-<p>Deliciosa geleia produzida com frutas do sítio.</p>
-<button>Adicionar ao Cesto</button>
+<h2>Receitas do Coração ❤ </h2>
+<div class="grid">
+<div class="card">
+<h3>Bolo de Fubá da Vovó</h3>
+<p>Feito com carinho, perfumado com erva-doce. Uma lembrança do café da tarde no interior.</p>
 </div>
-<div class="produto">
-<img src="pao-caseiro.jpg" alt="Pão caseiro">
-<h3>Pão Caseiro</h3>
-<p>Feito com fermentação natural e carinho.</p>
-<button>Adicionar ao Cesto</button>
+<div class="card">
+<h3>Arroz com Leite</h3>
+<p>Doce simples, reconfortante, com gosto de infância e aconchego de casa.</p>
 </div>
-
-<div class="produto">
-<img src="mel.jpg" alt="Pote de mel">
-<h3>Mel Puro</h3>
-<p>Extraído diretamente das colmeias locais.</p>
-<button>Adicionar ao Cesto</button>
+<div class="card">
+<h3>Pamonha Caseira</h3>
+<p>Tradição passada nas festas juninas, feita com milho fresco colhido na roça.</p>
+</div>
+<div class="card">
+<h3>Feijão Tropeiro</h3>
+<p>Prato rústico e nutritivo, que alimentava os viajantes do campo rumo à cidade.</p>
 </div>
 </div>
 </section>
 
-<section id="programacao">
-<h2>Programação da Feira</h2>
-<table>
-<tr>
-<th>Horário</th>
-<th>Atividade</th>
-<th>Local</th>
-</tr>
-<tr>
-<td>09:00</td>
-<td>Abertura com café colonial</td>
-<td>Pavilhão Principal</td>
-</tr>
-<tr>
-<td>10:30</td>
-<td>Oficina de Plantio Orgânico</td>
-<td>Área Verde</td>
-</tr>
-<tr>
-<td>14:00</td>
-<td>Apresentação cultural</td>
-<td>Palco Central</td>
-
-</tr>
-</table>
+<section id="historias" class="secao">
+<h2>Histórias que Temperam �</h2>
+<p><strong>“Toda vez que sento pra comer bolo de fubá, lembro do fogão à lenha da minha avó Maria, lá no
+sítio. Era onde a família se reunia, ria, contava causos e partilhava amor com cada fatia.”</strong> – Júlia, 17
+anos</p>
+<p><strong>“Meu pai ensinou a receita de feijão tropeiro como herança. Ele dizia que era ‘comida de quem
+carrega o mundo nas costas’.”</strong> – João, 15 anos</p>
 </section>
 
-<section id="contato">
-<h2>Contato</h2>
-<p>Email: contato@feiracampocidade.com.br</p>
-<p>Instagram: <a href="#">@feiracampocidade</a></p>
+<section id="enviar" class="secao">
+
+<h2>Compartilhe a Sua Receita ✍ </h2>
+<form>
+<label for="nome">Seu Nome:</label>
+<input type="text" id="nome" name="nome" required>
+
+<label for="receita">Receita:</label>
+<textarea id="receita" name="receita" rows="4" required></textarea>
+
+<label for="historia">História Afetiva:</label>
+<textarea id="historia" name="historia" rows="4" required></textarea>
+
+<button type="submit">Enviar Receita</button>
+</form>
 </section>
+</main>
 
 <footer>
-<p>&copy; 2025 Feira Campo-Cidade. Projeto fictício para fins educacionais.</p>
+<p>&copy; 2025 - Sabores que Aproximam. Projeto escolar de cultura e memória afetiva.</p>
 </footer>
 </body>
 </html>
